@@ -1,0 +1,3 @@
+[submodule ".\\lib\\Lips"]
+	path = .\\lib\\Lips
+	url = https://github.com/0n1yIms/LIPS.git

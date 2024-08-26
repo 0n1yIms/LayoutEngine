@@ -1,0 +1,21 @@
+Start -> SelectorList
+
+SelectorList -> Selector SelectorList
+SelectorList -> Selector
+
+Selector -> ID BRAKET_O DeclList BRAKET_C
+Selector -> MULT BRAKET_O DeclList BRAKET_C
+Selector -> DOT ID BRAKET_O DeclList BRAKET_C
+Selector -> NUMERAL ID BRAKET_O DeclList BRAKET_C
+Selector -> HEX BRAKET_O DeclList BRAKET_C
+
+DeclList -> Decl DeclList
+DeclList -> Decl
+
+Decl -> ID COLON Value SEMICOLON
+
+Value -> ID
+Value -> NUM
+Value -> HEX
+Value -> NUM PERCENT
+Value -> NUM ID

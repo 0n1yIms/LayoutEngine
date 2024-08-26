@@ -1,0 +1,20 @@
+
+.class {
+    width: 100px;
+    height: 100%;
+    margin: 10px;
+    border: 10px;
+}
+
+#id {
+    color: #FFFF00;     /* rgba */
+    background-color: #FF0000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+

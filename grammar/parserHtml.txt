@@ -1,0 +1,27 @@
+Start -> ElementStart
+
+ElementStart -> SPACE Element
+ElementStart -> SPACE Element SPACE
+ElementStart -> Element SPACE
+
+Element -> LT ID Attributes GT ElementList LT SLASH ID SPACE GT
+Element -> LT ID Attributes GT ElementList LT SLASH ID GT
+Element -> LT ID Attributes SLASH GT
+Element -> Text
+Text -> ID Text
+Text -> SYMBOL Text
+Text -> QUOTE Text
+Text -> SPACE Text
+Text -> SLASH Text
+Text -> ?
+
+
+Attributes -> SPACE ID EQUALS QUOTE ID QUOTE Attributes
+Attributes -> SPACE ID SPACE EQUALS QUOTE ID QUOTE Attributes
+Attributes -> SPACE ID SPACE EQUALS SPACE QUOTE ID QUOTE Attributes
+Attributes -> SPACE
+Attributes -> ?
+
+ElementList -> Element ElementList
+ElementList -> SPACE ElementList
+ElementList -> ?
